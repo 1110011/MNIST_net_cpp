@@ -1,0 +1,9 @@
+1 24 "MNIST_net_cpp.exe.1.manifest"
+2 ICON "icon.ico"
+
+3 256 "winGUI\\ogl\\shaders\\flatPoly.ver"
+4 256 "winGUI\\ogl\\shaders\\flatPoly.frg"
+
+5 256 "model.bnf"
+6 256 "test_labels.txt"
+7 256 "testImages.txt"

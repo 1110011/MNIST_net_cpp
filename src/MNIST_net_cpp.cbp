@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MNIST_net_cpp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MNIST_net_cpp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-fopenmp" />
+				</Compiler>
+				<Linker>
+					<Add library="gomp" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MNIST_net_cpp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="MNIST_net_cpp.exe.1.manifest" />
+		<Unit filename="bmpFile.cpp" />
+		<Unit filename="bmpFile.h" />
+		<Unit filename="image.cpp" />
+		<Unit filename="image.h" />
+		<Unit filename="loadpng.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="network.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="winGUI.h" />
+		<Unit filename="winGUI/mathUtils.h" />
+		<Unit filename="winGUI/matrixMath.cpp" />
+		<Unit filename="winGUI/matrixMath.h" />
+		<Unit filename="winGUI/ogl/gl45.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="winGUI/ogl/gl45.h" />
+		<Unit filename="winGUI/ogl/glslShaderCompiler.cpp" />
+		<Unit filename="winGUI/ogl/glslShaderCompiler.h" />
+		<Unit filename="winGUI/ogl/oglInit.cpp" />
+		<Unit filename="winGUI/ogl/oglInit.h" />
+		<Unit filename="winGUI/ogl/primitiveShapes.cpp" />
+		<Unit filename="winGUI/ogl/primitiveShapes.h" />
+		<Unit filename="winGUI/ogl/shaders/flatPoly.frg" />
+		<Unit filename="winGUI/ogl/shaders/flatPoly.ver" />
+		<Unit filename="winGUI/vectorMath.cpp" />
+		<Unit filename="winGUI/vectorMath.h" />
+		<Unit filename="winGUI/win32/win32Init.cpp" />
+		<Unit filename="winGUI/win32/win32Init.h" />
+		<Unit filename="winGUI/win32/window.cpp" />
+		<Unit filename="winGUI/win32/window.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
